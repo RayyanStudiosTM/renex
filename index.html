@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Coding By Rayyan , Abhishek -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Renex</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js" defer></script>
+    <style type="text/css">
+      *{
+        text-decoration: none;
+      }
+      .navbar{
+        background: crimson; font-family: calibri; padding-right: 15px;padding-left: 15px;
+      }
+      .navdiv{
+        display: flex; align-items: center; justify-content: space-between;
+      }
+      .logo a{
+        font-size: 35px; font-weight: 600; color: white;
+      }
+      li{
+        list-style: none; display: inline-block;
+      }
+      li a{
+        color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+      }
+      button{
+        background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 135px;
+      }
+      button a{
+        color: white; font-weight: bold; font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">Renex</a> </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./payment/index.html">Subscription</a></li>
+          <li><a href="./freelancers/index.html">Freelancers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Support</a></li>
+          <button><a href="./signup-login/index.html">SignUp/SignIn</a></button>
+        </ul>
+      </div>
+    </nav>
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="photographer">
+            <i class="uil uil-camera"></i>
+            <span></span>
+          </div>
+          <div class="buttons">
+            <i class="uil uil-import"></i>
+            <i class="close-icon uil uil-times"></i>
+          </div>
+        </header>
+        <div class="preview-img">
+          <div class="img"><img src="" alt="preview-img"></div>
+        </div>
+      </div>
+    </div>
+    <section class="search">
+      <img src="./images/search-img.jpg" alt="search-img">
+      <div class="content">
+        <h1>Renex</h1>
+        <p>Search and download any images within a second</p>
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search images">
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <ul class="images"></ul>
+      <button class="load-more">Load More</button>
+    </section>
+
+  </body>
+</html>
